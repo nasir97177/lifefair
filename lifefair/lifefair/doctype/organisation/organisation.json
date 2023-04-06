@@ -1,0 +1,191 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:official_name",
+ "creation": "2018-05-20 21:32:54.135327",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "official_name",
+  "type",
+  "image",
+  "homepage",
+  "ist_ver",
+  "ist_kein_ver",
+  "column_general",
+  "alternative_names",
+  "french_name",
+  "english_name",
+  "italian_name",
+  "section_addresses",
+  "address_html",
+  "section_people",
+  "people_html",
+  "section_common_contact",
+  "email",
+  "letter_salutation",
+  "section_partnerships",
+  "partnerships"
+ ],
+ "fields": [
+  {
+   "fieldname": "official_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Official name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Stakeholder",
+   "options": "Organisation Type"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "homepage",
+   "fieldtype": "Data",
+   "label": "Homepage"
+  },
+  {
+   "fieldname": "column_general",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alternative_names",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Alternative names"
+  },
+  {
+   "fieldname": "french_name",
+   "fieldtype": "Data",
+   "label": "French name"
+  },
+  {
+   "fieldname": "english_name",
+   "fieldtype": "Data",
+   "label": "English name"
+  },
+  {
+   "fieldname": "italian_name",
+   "fieldtype": "Data",
+   "label": "Italian name"
+  },
+  {
+   "fieldname": "section_addresses",
+   "fieldtype": "Section Break",
+   "label": "Addresses"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Addresses"
+  },
+  {
+   "fieldname": "section_people",
+   "fieldtype": "Section Break",
+   "label": "People"
+  },
+  {
+   "fieldname": "people_html",
+   "fieldtype": "HTML",
+   "label": "People"
+  },
+  {
+   "fieldname": "section_common_contact",
+   "fieldtype": "Section Break",
+   "label": "Common contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "letter_salutation",
+   "fieldtype": "Select",
+   "label": "Letter salutation",
+   "options": "\nSehr geehrte Damen und Herren"
+  },
+  {
+   "fieldname": "section_partnerships",
+   "fieldtype": "Section Break",
+   "label": "Partnerships"
+  },
+  {
+   "fieldname": "partnerships",
+   "fieldtype": "Table",
+   "label": "Partnerships",
+   "options": "Organisation Partnership"
+  },
+  {
+   "default": "0",
+   "fieldname": "ist_ver",
+   "fieldtype": "Check",
+   "label": "Ist Verband "
+  },
+  {
+   "default": "0",
+   "fieldname": "ist_kein_ver",
+   "fieldtype": "Check",
+   "label": "Ist kein Verband"
+  }
+ ],
+ "image_field": "image",
+ "modified": "2021-05-23 15:34:11.640935",
+ "modified_by": "Administrator",
+ "module": "Lifefair",
+ "name": "Organisation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lifefair Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lifefair User",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "official_name, alternative_names, french_name, english_name, italian_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "official_name",
+ "track_changes": 1
+}

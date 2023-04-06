@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title>Review {{ doc.name }}</title>
+  <style>
+  body, h1, h2, h3, h4, h5, table, p {
+      color:silver;
+      font-family: Roboto, Arial, "Liberation Sans", sans-serif;
+  }
+  h1 {
+    font-size: 40px;
+    color: #003764;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  h2 {
+  }
+  h3 {
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 98%;
+    color: #003764;
+    text-align: left;
+    font-style: normal;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 16px;
+    color: #003764;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+  table, tr, td {
+    color: black; // #00A0E6;
+    font-weight: 400;
+    line-height: 1.4em;
+    vertical-align: top;
+  }
+  p {
+    color: silver;
+  }
+  .right {
+    text-align: right;
+  }
+  .lastline {
+    border-bottom: 1px solid silver;
+  }
+  .modulf {
+    text-transform: uppercase;
+    color: #003764;
+    font-weight: 300;
+    font-size: 30px;
+  }
+  .oberf {
+    text-transform: uppercase;
+    color: #00a0e6;
+    font-weight: 300;
+    font-size: 30px;
+  }
+  .unterf {
+    color: #00A0E6;
+    font-size: 18px;
+  }
+  .reff {
+    color: #00A0E6;
+    font-weight: 400;
+    line-height: 1.4em;      
+  }
+  </style>
+</head>
+<body>
+  <!-- timestamp -->
+<p class="right">{{ now }}</p>
+<h3>{{ doc.name }}</h3>
+
+<h1>{{ doc.official_title }}</h1>
+
+<h4>{{ doc.time }}</h4>
+<h4>{{ doc.location }}</h4>
+<h4>{{ doc.location_detail_1 }}</h4>
+<h4>{{ doc.location_detail_2 }}</h4>
+<h4>{{ doc.location_detail_3 }}</h4>
+
+<!-- main content -->
+<table>
+<tr><td>Herausforderungen</td><td><i>(350 Zeichen inklusive Leerzeichen)</i><br>{{ doc.topic }}</td></tr>
+<tr><td>Zentrale Fragen</td><td><i>(350 Zeichen inklusive Leerzeichen)</i><br>{{ doc.content }}</td></tr>
+<tr><td>Ihr Nutzen</td><td><i>(200 Zeichen inklusive Leerzeichen)</i><br>{{ doc.use }}<br></td></tr>
+</table>
+
+<!-- partner -->
+<h3>Partner</h3>
+{% for partner in partners %}
+  <h4>{{ partner.type }}: {{ partner.parent }}</h4>
+{% endfor %}
+
+<!-- program details -->
+<h3>Programm</h3>
+<table>
+{% for detail in doc.planning %}
+  <tr>
+    <td>Beschreibung</td><td
+      {% if detail.format == "ModulF" %}class="modulf"{% endif %}
+      {% if detail.format == "OberF" %}class="oberf"{% endif %}
+      {% if detail.format == "UnterF" %}class="unterf"{% endif %}
+      {% if detail.format == "REFF" %}class="reff"{% endif %}
+      >{{ detail.title }}</td>
+  </tr>
+  {% if detail.format %}
+    <!-- note: templating engine does not support "REF" in detail.format|upper: cannot use 'in' operator to search for "REF" in detail.format -->
+    {% if detail.format == "REFF" %}
+    <tr>
+      <td>Person</td>  
+      <td class="reff">{{ detail.person_long_name }} ({{ detail.person }})</td>
+    </tr>
+    <tr>
+      <td>Funktion</td>  
+      <td>{{ detail.person_website_description }}</td>
+    </tr>
+    <tr>
+      <td>Status</td>  
+      <td>{{ detail.status }}</td>
+    </tr>
+    <tr>
+      <td>Rolle</td>  
+      <td>{{ detail.person_role }}</td>
+    </tr>
+    <tr>
+      <td>Dauer (min)</td>  
+      <td>{{ detail.duration }}</td>
+    </tr>
+    <tr>
+      <td>Geschlecht</td>  
+      <td>{{ detail.gender }}</td>
+    </tr>
+    <tr>
+      <td>Stakeholder</td>  
+      <td>{{ detail.stakeholder }}</td>
+    </tr>
+    <tr>
+      <td>Hierarchiestufe</td>  
+      <td>{{ detail.hierarchiestufe }}</td>
+    </tr>
+    <tr>
+      <td>GzD Titel</td>  
+      <td>{% if detail.gzd_title %}ja{% else %}nein{% endif %}</td>
+    </tr>
+    <tr>
+      <td>GzD Name</td>  
+      <td>{% if detail.gzd_person %}ja{% else %}nein{% endif %}</td>
+    </tr>    
+    {% endif %}
+  {% endif %}
+  <tr>
+    <td class="lastline">Kommentar</td>  
+    <td class="lastline"></td>
+  </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

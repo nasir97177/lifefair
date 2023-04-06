@@ -1,0 +1,319 @@
+{
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2018-05-20 21:55:10.924857",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "meeting",
+  "anderes_datum_setzen",
+  "bookable",
+  "neues_datum",
+  "section_information",
+  "short_name",
+  "official_title",
+  "sub_title",
+  "footnote",
+  "time",
+  "location",
+  "location_detail_1",
+  "location_detail_2",
+  "location_detail_3",
+  "ist_kein_aktiver_block",
+  "kinderbetreuung",
+  "column_information",
+  "tile_text",
+  "topic",
+  "content",
+  "use",
+  "section_interests",
+  "interests",
+  "interest_1",
+  "column_break_24",
+  "interest_2",
+  "column_break_26",
+  "interest_3",
+  "section_links",
+  "website_link",
+  "facebook_link",
+  "column_links",
+  "linkedin_link",
+  "twitter_link",
+  "section_planning",
+  "planning",
+  "section_partnerships",
+  "partnerships_html",
+  "prospekt_section",
+  "flyer_print_format"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "meeting",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Meeting",
+   "options": "Meeting",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_information",
+   "fieldtype": "Section Break",
+   "label": "Information"
+  },
+  {
+   "fieldname": "short_name",
+   "fieldtype": "Data",
+   "label": "Short name"
+  },
+  {
+   "fieldname": "official_title",
+   "fieldtype": "Data",
+   "label": "Official title"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Uhrzeit"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "location_detail_1",
+   "fieldtype": "Data",
+   "label": "Location Detail 1"
+  },
+  {
+   "fieldname": "location_detail_2",
+   "fieldtype": "Data",
+   "label": "Location Detail 2"
+  },
+  {
+   "fieldname": "location_detail_3",
+   "fieldtype": "Data",
+   "label": "Location Detail 3"
+  },
+  {
+   "fieldname": "tile_text",
+   "fieldtype": "Small Text",
+   "label": "Tile text"
+  },
+  {
+   "fieldname": "column_information",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "topic",
+   "fieldtype": "Small Text",
+   "label": "IF: Herausforderungen; LFF: Beschrieb Header"
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Small Text",
+   "label": "IF: Zentrale Fragen; LFF: Beschrieb"
+  },
+  {
+   "fieldname": "use",
+   "fieldtype": "Small Text",
+   "label": "IF: Ihr Nutzen; LFF: Beschrieb Fussnote"
+  },
+  {
+   "fieldname": "section_links",
+   "fieldtype": "Section Break",
+   "label": "Link"
+  },
+  {
+   "fieldname": "website_link",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "facebook_link",
+   "fieldtype": "Data",
+   "label": "Facebook"
+  },
+  {
+   "fieldname": "column_links",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "linkedin_link",
+   "fieldtype": "Data",
+   "label": "LinkedIn"
+  },
+  {
+   "fieldname": "twitter_link",
+   "fieldtype": "Data",
+   "label": "Twitter"
+  },
+  {
+   "fieldname": "section_planning",
+   "fieldtype": "Section Break",
+   "label": "Planning"
+  },
+  {
+   "fieldname": "planning",
+   "fieldtype": "Table",
+   "label": "Planning",
+   "options": "Block Planning"
+  },
+  {
+   "fieldname": "section_partnerships",
+   "fieldtype": "Section Break",
+   "label": "Partnerships"
+  },
+  {
+   "fieldname": "partnerships_html",
+   "fieldtype": "HTML",
+   "label": "Partnerships"
+  },
+  {
+   "default": "Block Flyer",
+   "fieldname": "flyer_print_format",
+   "fieldtype": "Link",
+   "label": "Print Format",
+   "options": "Print Format",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "anderes_datum_setzen",
+   "fieldtype": "Check",
+   "label": "Anderes Datum setzen"
+  },
+  {
+   "depends_on": "eval:doc.anderes_datum_setzen == 1",
+   "fieldname": "neues_datum",
+   "fieldtype": "Date",
+   "label": "Neues Datum"
+  },
+  {
+   "default": "0",
+   "fieldname": "ist_kein_aktiver_block",
+   "fieldtype": "Check",
+   "label": "Ist kein aktiver Block"
+  },
+  {
+   "fieldname": "sub_title",
+   "fieldtype": "Data",
+   "label": "Sub Titel"
+  },
+  {
+   "default": "0",
+   "fieldname": "kinderbetreuung",
+   "fieldtype": "Check",
+   "label": "Kinderbetreuung"
+  },
+  {
+   "fieldname": "prospekt_section",
+   "fieldtype": "Section Break",
+   "label": "Druckformat"
+  },
+  {
+   "fieldname": "footnote",
+   "fieldtype": "Data",
+   "label": "Fusszeile"
+  },
+  {
+   "fieldname": "section_interests",
+   "fieldtype": "Section Break",
+   "label": "Interessen"
+  },
+  {
+   "fieldname": "interest_1",
+   "fieldtype": "Link",
+   "label": "Interesse 1",
+   "options": "Interesse"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interest_2",
+   "fieldtype": "Link",
+   "label": "Interesse 2",
+   "options": "Interesse"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interest_3",
+   "fieldtype": "Link",
+   "label": "Interesse 3",
+   "options": "Interesse"
+  },
+  {
+   "fieldname": "interests",
+   "fieldtype": "Table MultiSelect",
+   "label": "Interest",
+   "options": "Block Interest"
+  },
+  {
+   "default": "0",
+   "fieldname": "bookable",
+   "fieldtype": "Check",
+   "label": "Buchbar im Ticketing"
+  }
+ ],
+ "modified": "2022-07-04 16:14:53.456264",
+ "modified_by": "Administrator",
+ "module": "Lifefair",
+ "name": "Block",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lifefair Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lifefair User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

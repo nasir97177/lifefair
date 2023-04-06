@@ -1,0 +1,155 @@
+{
+ "creation": "2022-06-15 14:56:35.568113",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "ticket_item",
+  "column_general",
+  "sales_taxes",
+  "email_clerk",
+  "section_stripe",
+  "stripe_name",
+  "stripe",
+  "column_stripe",
+  "stripe_api_key",
+  "success_url",
+  "cancel_url",
+  "pos_section",
+  "pos_profile",
+  "column_pos",
+  "mode_of_payment"
+ ],
+ "fields": [
+  {
+   "fieldname": "ticket_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ticket Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_taxes",
+   "fieldtype": "Link",
+   "label": "Sales Taxes and Charges Template",
+   "options": "Sales Taxes and Charges Template"
+  },
+  {
+   "fieldname": "stripe",
+   "fieldtype": "Link",
+   "label": "Stripe Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "email_clerk",
+   "fieldtype": "Data",
+   "label": "Email Clerk"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stripe_api_key",
+   "fieldtype": "Data",
+   "label": "Stripe Api Key",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stripe_name",
+   "fieldtype": "Data",
+   "label": "Stripe Checkout Title"
+  },
+  {
+   "fieldname": "success_url",
+   "fieldtype": "Data",
+   "label": "Success URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cancel_url",
+   "fieldtype": "Data",
+   "label": "Cancel URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_stripe",
+   "fieldtype": "Section Break",
+   "label": "Stripe"
+  },
+  {
+   "fieldname": "column_stripe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_general",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Mode of Payment",
+   "options": "Mode of Payment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pos_section",
+   "fieldtype": "Section Break",
+   "label": "POS Profile"
+  },
+  {
+   "fieldname": "column_pos",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pos_profile",
+   "fieldtype": "Link",
+   "label": "POS Profile",
+   "options": "POS Profile",
+   "reqd": 1
+  }
+ ],
+ "issingle": 1,
+ "modified": "2022-08-03 11:48:32.358936",
+ "modified_by": "Administrator",
+ "module": "Lifefair",
+ "name": "Ticketing Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Lifefair User",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Lifefair Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

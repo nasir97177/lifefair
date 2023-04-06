@@ -1,0 +1,148 @@
+Module: Lifefair,Events,Anlässe
+Module: Lifefair,Meeting,Anlass
+Module: Lifefair,Actors per Meeting,Akteure pro Anlass
+Module: Lifefair,Person,Kontakt KNT
+DocType: Person,Full name,Ganzer Name
+DocType: Person,First name,Vorname
+DocType: Person,Last name,Nachname
+DocType: Person,First 4 characters,Erste 4 Zeichen
+DocType: Person,Function,Funktion
+DocType: Person,Company phone,Telefon geschäftlich
+DocType: Person,Private phone,Telefon privat
+DocType: Person,Mobile phone,Mobiltelefon
+DocType: Person,Reference person,Bezugsperson
+DocType: Person,Organisations,Organisationen
+DocType: Person,Contact details,Kontaktdetails
+DocType: Person,Letter salutation,Anrede Brief
+DocType: Person,Image B&W,Bild schwarzweiss
+DocType: Person,Usage,Verwendung
+DocType: Person,Show on website,Auf Webseite anzeigen
+DocType: Person,Website description,Bezeichnung für externe Kommunikation
+DocType: Person,Send Mail,Mail senden
+DocType: Person,CV Date,Datum Lebenslauf
+DocType: Person,Do not contact,Nicht kontaktieren
+DocType: Person,Academic Title,Akademischer Titel
+DocType: Person,Preferred language,Bevorzugte Sprache
+DocType: Person,Primary Organisation,Hauptorganisation
+DocType: Person,CV,Lebenslauf
+DocType: Person,Quotes,Zitate
+DocType: Person,No addresses found,Keine Adressen gefunden
+DocType: Person,No linked contacts found,Keine verknüpfte Kontakte gefunden
+DocType: Person,is,ist
+DocType: Person,of,von
+DocType: Person,Download vCard,vCard herunterladen
+DocType: Person,Participation,Teilnahme
+DocType: Person,Registration,Registrierung
+DocType: Person,Notes,Notizen
+DocType: Person,This person was not active in any listed meetings.,Dieser Kontakt war nicht aktiv in einem Anlass.
+DocType: Person,Active participation,Aktive Teilnahme
+DocType: Person,Business Card,Visitenkarte
+DocType: Person,Related contacts,Verknüpfte Kontakte
+DocType: Person,This person knows...,Diese Person kennt...
+DocType: Person,Personal Postal Code,Private PLZ
+DocType: Person,for COVID tracing,für COVID-Tracing
+DocType: Organisation,Official name,Name
+DocType: Organisation,Alternative names,Alternative Namen
+DocType: Organisation,People,Personen
+DocType: Organisation,French name,Französischer Name
+DocType: Organisation,English name,Englischer Name
+DocType: Organisation,Italian name,Italienischer Name
+DocType: Organisation,Common contact,Gemeinsamer Kontakt
+DocType: Organisation,Image URL (Web),"Bildquelle (URL, Web)"
+DocType: Organisation,Image URL (Print),"Bildquelle (Print, Web)"
+DocType: Organisation Address,Street,Strasse
+DocType: Organisation Address,Additional address,Zusätzliche Adresse
+DocType: Organisation Address,Post box,Postfach
+DocType: Organisation Address,PIN code,Postleitzahl
+DocType: Organisation Address,Contact person,Kontaktperson
+DocType: Organisation Address,Contact person function,Funktion der Kontaktperson
+DocType: Organisation Address,Post box PIN code,Postleitzahl Postfach
+DocType: Organisation Address,Post box city,Ort Postfach
+DocType: Organisation Address,Organisation Address,Organisationsadresse
+DocType: Organisation Address,Post box country,Land Postfach
+DocType: Organisation Address,Please select a link to an organisation or person.,Bitte setzen Sie eine Verknüpfung zu einer Organisation oder Person.
+DocType: Organisation Address,Private Address,Private Adresse
+DocType: Organisation Address,Is primary,Hauptadresse
+DocType: Organisation Address,For shipping,Versandadresse
+DocType: Organisation Address,Set if this is the primary address,Als Hauptadresse setzen
+DocType: Organisation Address,Set if this is the shipping address,Als Versandadresse nutzen
+DocType: Person Group,Person Group,Personengruppe
+DocType: Person Group,Linked People,Verknüpfte Personen
+DocType: Organisation Type,Organisation Type,Organisationstyp
+DocType: Organisation Type,Linked Organisations,Verknüpfte Organisationen
+Report: Actors per Meeting,Description,Beschreibung
+DocType: Partnershipticket,Partnership Ticket,Partner-Ticket
+DocType: Partnershipticket,Partnership Tickets,Partner-Tickets
+DocType: Partnershipticket,"Please fill in the table below with the people who should receive the partnership ticket. Without a valid email address, the ticket cannot be issued.","Bitte füllen Sie die Tabelle unten mit den Personen aus, die ein Partner-Ticket erhalten sollen. Ohne gültige Email-Adresse kann das Ticket nicht ausgestellt werden."
+DocType: Partnershipticket,Responsible,Verantwortlicher Benutzer
+DocType: Partnershipticket,Identify people,Teilnehmer identifizeren
+DocType: Partnershipticket,The selected responsible person is not yet a user. Please add the email as new user.,Der verantwortliche Benutzer ist im System nicht verfügbar. Bitte fügen Sie den Benutzer hinzu.
+DocType: Partnershipticket,Partnershipticket,Partner-Ticket
+DocType: Partnershipticket,Ticket Overview,Übersicht
+DocType: Partnershipticket,Missing registrations,Fehlende Anmeldungen
+DocType: Partnershipticket,People identification completed,Personenidentifikation abgeschlossen
+DocType: Partnershipticket,Person count,Anzahl Personen
+DocType: Partnershipticket,Ticket count,Anzahl Tickets
+DocType: Partnershipticket,Registration count,Anzahl Registrierungen
+DocType: Registration,Ticket number,Ticketnummer
+DocType: Registration,Invoice number,Rechnungsnummer
+DocType: Registration,Import Xing Registrations,Xing-Anmeldungen importieren
+DocType: Registration,New registrations: ,Neue Anmeldungen: 
+DocType: Registration,New people: ,Neue Kontakte: 
+DocType: Registration,None,Keine
+DocType: Registration,Error reading file,Fehler beim Lesen der Datei
+DocType: Registration,Error,Fehler
+DocType: Registration,Please select a file.,Bitte eine Datei auswählen.
+DocType: Registration,Registered,Registriert
+DocType: Registration,Create ticket,Ticket erstellen
+DocType: Block,Official title,Offizieller Titel
+DocType: Block,Use,Nutzen
+DocType: Block,Tile text,Kacheltext
+DocType: Block,Location Detail 1,Ort / Detail 1
+DocType: Block,Location Detail 2,Ort / Detail 2
+DocType: Block,Location Detail 3,Ort / Detail 3
+DocType: Block,Short name,Kurzer Titel
+DocType: Block,With description,Mit Beschreibung
+DocType: Block,Partnerships,Partnerschaften
+DocType: Block,Download HTML,HTML herunterladen
+DocType: Block,Status Details,Erweiterter Status
+DocType: Block,Download Excel,Planungs-Excel
+DocType: Block,Interest,Interesse
+DocType: Follow Up,Follow Up,Nachfassen
+DocType: Follow Up,Action date,Aktionsdatum
+DocType: Follow Up,Action status,Bearbeitungsstatus
+DocType: Person,Sync MailChimp,MailChimp synchronisieren
+DocType: Person,Please select a meeting for a second wave.,Bitte einen Anlass wählen für eine 2. Welle.
+DocType: Person,Starting sync...,Synchronisation starten...
+DocType: Person,Sync,Synchronisieren
+DocType: Person,Sync Person with MailChimp,Kontakte mit MailChimp synchronisieren
+DocType: Person,Synchronisation to MailChimp complete,Synchronisation mit MailChimp abgeschlossen
+DocType: Person,No configuration found. Please make sure that there is a MailChimp configuration,Keine MailChimp Einstellungen gefunden.
+DocType: Person,Queued for syncing. It may take a few minutes to an hour.,Synchronisation läuft. Dies kann einige Minuten dauern.
+DocType: MailChimp Settings,MailChimp Settings,MailChimp Einstellungen
+DocType: MailChimp Settings,Host,Host
+DocType: MailChimp Settings,Something like 12345dcdb...42-us05,Etwas wie 12345dcdb...42-us05
+DocType: MailChimp Settings,Last Actions,Letzte Aktionen
+DocType: MailChimp Settings,Nothing.,Nichts.
+DocType: MailChimp Settings,Only deactivate for testing.,Nur in Testumgebung deaktivieren.
+DocType: MailChimp Settings,Something like https://[dc].api.mailchimp.com/3.0 where [dc] is the last part of the API key.,Etwas wie https://[dc].api.mailchimp.com/3.0 wobei [dc] der letzte Teil des API-Schlüssels ist.
+DocType: MailChimp Settings,API key,API-Schlüssel
+DocType: MailChimp Settings,Verify SSL,SSL prüfen
+DocType: MailChimp Settings,Connection verification failed ({0}).,Überprüfung der Verbindung fehlgeschlagen ({0}).
+DocType: Exhibitor,Exhibitor,Ausstellung
+DocType: Exhibitor,Exhibition website,Aussteller-Webseite
+DocType: Exhibitor,Linktext website,Webseiten-Linktext
+DocType: Exhibitor,Product Image link,Link Produktbild
+DocType: Exhibitor,Company description,Firmenbeschreibung
+DocType: Exhibitor,Description too long. Please shorten below 1100 characters.,Beschreibung zu lang. Bitte unter 1100 Zeichen kürzen.
+DocType: SDG Goal,SDG Goal,SDG Ziel
+DocType: Marketing and Activity,Marketing and Activity,Veranstaltungen und Marketing
+DocType: Marketing and Activity,Card,Karte
+DocType: Marketing and Activity,Network activation,Netzwerkaktivierung
+DocType: Marketing and Activity,Collaboration partner,Mitwirkungspartner
+DocType: Marketing and Activity,ISA quoted,ISA angeboten
+DocType: Marketing and Activity,ISA interest,ISA Interesse
+DocType: Marketing and Activity,ISA declined,ISA Absage
+DocType: Marketing and Activity,Testimonial generation,Testimonialgenerierung
+Report: Participants list per event for reception,Participants list per event for reception,Teilnehmerliste pro Anlass für Empfang
+Report: Participants list per event for reception,With Details,Mit Details

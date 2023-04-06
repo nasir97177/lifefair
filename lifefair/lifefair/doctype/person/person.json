@@ -1,0 +1,578 @@
+{
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2018-05-19 20:23:57.192448",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "long_name",
+  "first_name",
+  "column_name",
+  "naming_series",
+  "last_name",
+  "first_characters",
+  "section_business_card",
+  "business_card_html",
+  "section_addresses",
+  "customer_address",
+  "address_html",
+  "section_contact_display",
+  "contact_html",
+  "contacts",
+  "known_contacts",
+  "section_actor",
+  "actor_html",
+  "passive_participation_section",
+  "registration",
+  "section_classification",
+  "person_group",
+  "stakeholder",
+  "hierarchiestufe",
+  "ausland",
+  "column_classification",
+  "branche",
+  "engagement",
+  "section_interest",
+  "interessen",
+  "section_organisations",
+  "organisations",
+  "primary_organisation",
+  "primary_function",
+  "section_website",
+  "show_on_website",
+  "column_website",
+  "website_description",
+  "section_contact",
+  "contact_notes",
+  "email",
+  "email2",
+  "email3",
+  "skype",
+  "preferred_language",
+  "do_not_contact",
+  "nur_einmal_kontaktieren",
+  "email_invalid",
+  "email_invalid_data",
+  "column_contact",
+  "company_phone",
+  "mobile_phone",
+  "private_phone",
+  "linkedin_id",
+  "homepage",
+  "personal_postal_code",
+  "customer",
+  "section_salutation",
+  "salutation",
+  "title",
+  "gender",
+  "letter_salutation",
+  "column_salutation",
+  "salutations",
+  "section_images",
+  "image",
+  "column_image",
+  "image_bw",
+  "section_free",
+  "notes",
+  "section_cv",
+  "cv",
+  "column_cv",
+  "cv_date",
+  "section_quotes",
+  "quotes",
+  "section_tags",
+  "is_vip"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Full name"
+  },
+  {
+   "fieldname": "long_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Long name"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "First name"
+  },
+  {
+   "fieldname": "column_name",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "P.######",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming series",
+   "options": "P.######"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Last name"
+  },
+  {
+   "fieldname": "first_characters",
+   "fieldtype": "Data",
+   "label": "First 4 characters",
+   "length": 4
+  },
+  {
+   "fieldname": "section_business_card",
+   "fieldtype": "Section Break",
+   "label": "Business Card"
+  },
+  {
+   "fieldname": "business_card_html",
+   "fieldtype": "HTML",
+   "label": "Business Card"
+  },
+  {
+   "fieldname": "section_addresses",
+   "fieldtype": "Section Break",
+   "label": "Addresses"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Addresses"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_contact_display",
+   "fieldtype": "Section Break",
+   "label": "Contacts"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "Contacts"
+  },
+  {
+   "description": "Related contacts",
+   "fieldname": "contacts",
+   "fieldtype": "Table",
+   "label": "Contacts",
+   "options": "Person Contact"
+  },
+  {
+   "description": "This person knows...",
+   "fieldname": "known_contacts",
+   "fieldtype": "Table",
+   "label": "Known Contacts",
+   "options": "Person Contact"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_actor",
+   "fieldtype": "Section Break",
+   "label": "Active participation"
+  },
+  {
+   "fieldname": "actor_html",
+   "fieldtype": "HTML",
+   "label": "Actor"
+  },
+  {
+   "fieldname": "section_classification",
+   "fieldtype": "Section Break",
+   "label": "Klassifizierung"
+  },
+  {
+   "fieldname": "person_group",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Group",
+   "options": "Person Group"
+  },
+  {
+   "fieldname": "stakeholder",
+   "fieldtype": "Link",
+   "label": "Stakeholder",
+   "options": "Stakeholder"
+  },
+  {
+   "fieldname": "hierarchiestufe",
+   "fieldtype": "Link",
+   "label": "Hierarchiestufe",
+   "options": "Hierarchiestufe"
+  },
+  {
+   "fieldname": "column_classification",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branche",
+   "fieldtype": "Link",
+   "label": "Branche",
+   "options": "Branche"
+  },
+  {
+   "fieldname": "engagement",
+   "fieldtype": "Link",
+   "label": "Engagement",
+   "options": "Engagement"
+  },
+  {
+   "fieldname": "section_interest",
+   "fieldtype": "Section Break",
+   "label": "Interessen"
+  },
+  {
+   "fieldname": "interessen",
+   "fieldtype": "Table",
+   "label": "Interessen",
+   "options": "Person Interest"
+  },
+  {
+   "fieldname": "section_organisations",
+   "fieldtype": "Section Break",
+   "label": "Organisations"
+  },
+  {
+   "fieldname": "organisations",
+   "fieldtype": "Table",
+   "label": "Organisations",
+   "options": "Person Organisation"
+  },
+  {
+   "fieldname": "primary_organisation",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Primary Organisation"
+  },
+  {
+   "fieldname": "primary_function",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Primary function"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_website",
+   "fieldtype": "Section Break",
+   "label": "Website"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_on_website",
+   "fieldtype": "Check",
+   "label": "Show on website"
+  },
+  {
+   "fieldname": "column_website",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "website_description",
+   "fieldtype": "Small Text",
+   "label": "Website description"
+  },
+  {
+   "fieldname": "section_contact",
+   "fieldtype": "Section Break",
+   "label": "Contact details"
+  },
+  {
+   "fieldname": "contact_notes",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "email2",
+   "fieldtype": "Data",
+   "label": "Email 2"
+  },
+  {
+   "fieldname": "email3",
+   "fieldtype": "Data",
+   "label": "Email 3"
+  },
+  {
+   "fieldname": "skype",
+   "fieldtype": "Data",
+   "label": "Skype"
+  },
+  {
+   "default": "de",
+   "fieldname": "preferred_language",
+   "fieldtype": "Select",
+   "label": "Preferred language",
+   "options": "de\nfr\nen\nit"
+  },
+  {
+   "default": "0",
+   "fieldname": "do_not_contact",
+   "fieldtype": "Check",
+   "label": "Do not contact",
+   "permlevel": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "nur_einmal_kontaktieren",
+   "fieldtype": "Check",
+   "label": "Nur einmal kontaktieren"
+  },
+  {
+   "fieldname": "column_contact",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_phone",
+   "fieldtype": "Data",
+   "label": "Company phone"
+  },
+  {
+   "fieldname": "mobile_phone",
+   "fieldtype": "Data",
+   "label": "Mobile phone"
+  },
+  {
+   "fieldname": "private_phone",
+   "fieldtype": "Data",
+   "label": "Telefon Zentrale"
+  },
+  {
+   "fieldname": "homepage",
+   "fieldtype": "Data",
+   "label": "Homepage"
+  },
+  {
+   "fieldname": "section_salutation",
+   "fieldtype": "Section Break",
+   "label": "Salutation"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Academic Title",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nFrau\nHerr"
+  },
+  {
+   "fieldname": "letter_salutation",
+   "fieldtype": "Select",
+   "label": "Letter salutation",
+   "options": "\nSehr geehrte Frau\nSehr geehrter Herr"
+  },
+  {
+   "fieldname": "column_salutation",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salutations",
+   "fieldtype": "Table",
+   "label": "Salutations",
+   "options": "Person Salutation"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_images",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_image",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_bw",
+   "fieldtype": "Attach Image",
+   "label": "Image B&W"
+  },
+  {
+   "fieldname": "section_free",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_cv",
+   "fieldtype": "Section Break",
+   "label": "CV"
+  },
+  {
+   "fieldname": "cv",
+   "fieldtype": "Small Text",
+   "label": "CV"
+  },
+  {
+   "fieldname": "column_cv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cv_date",
+   "fieldtype": "Date",
+   "label": "CV Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_quotes",
+   "fieldtype": "Section Break",
+   "label": "Quotes"
+  },
+  {
+   "fieldname": "quotes",
+   "fieldtype": "Table",
+   "label": "Quotes",
+   "options": "Person Quote"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_tags",
+   "fieldtype": "Section Break",
+   "label": "Tags"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_vip",
+   "fieldtype": "Check",
+   "label": "VIP"
+  },
+  {
+   "default": "0",
+   "fieldname": "email_invalid",
+   "fieldtype": "Check",
+   "label": "Email-Adresse nicht g\u00fcltig"
+  },
+  {
+   "depends_on": "eval:doc.email_invalid == 1;",
+   "fieldname": "email_invalid_data",
+   "fieldtype": "Data",
+   "label": "Ung\u00fcltige Email-Adresse"
+  },
+  {
+   "description": "for COVID tracing",
+   "fieldname": "personal_postal_code",
+   "fieldtype": "Data",
+   "label": "Personal Postal Code"
+  },
+  {
+   "fieldname": "linkedin_id",
+   "fieldtype": "Data",
+   "label": "Linkedin ID"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "passive_participation_section",
+   "fieldtype": "Section Break",
+   "label": "Passive Teilnahme"
+  },
+  {
+   "fieldname": "registration",
+   "fieldtype": "HTML",
+   "label": "registration"
+  },
+  {
+   "default": "0",
+   "fieldname": "ausland",
+   "fieldtype": "Check",
+   "label": "Ausland"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_address",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Customer Address",
+   "options": "Address"
+  }
+ ],
+ "image_field": "image",
+ "modified": "2022-07-07 17:29:13.212534",
+ "modified_by": "Administrator",
+ "module": "Lifefair",
+ "name": "Person",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lifefair Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lifefair User",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "full_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "full_name",
+ "track_changes": 1
+}

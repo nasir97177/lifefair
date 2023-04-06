@@ -1,0 +1,256 @@
+{
+ "allow_import": 1,
+ "creation": "2018-05-26 23:13:35.120653",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "person",
+  "column_head",
+  "person_name",
+  "section_event",
+  "meeting",
+  "block",
+  "date",
+  "status",
+  "column_event",
+  "erster_tag_offen",
+  "zweiter_tag_offen",
+  "remarks",
+  "section_xing",
+  "ticket_number",
+  "barcode",
+  "type",
+  "solumn_xing",
+  "payment",
+  "invoice_number",
+  "phone",
+  "code",
+  "participation",
+  "is_checked",
+  "section_ticket",
+  "free_text",
+  "email_clerk",
+  "column_ticket",
+  "sponsor",
+  "meldedatum"
+ ],
+ "fields": [
+  {
+   "fieldname": "person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Person",
+   "options": "Person",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_head",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "person.full_name",
+   "fieldname": "person_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_event",
+   "fieldtype": "Section Break",
+   "label": "Event"
+  },
+  {
+   "fieldname": "meeting",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Meeting",
+   "options": "Meeting"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Block",
+   "options": "Block"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nTentative\nConfirmed\nCancelled\nPaid\nSent"
+  },
+  {
+   "fieldname": "column_event",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_xing",
+   "fieldtype": "Section Break",
+   "label": "Xing"
+  },
+  {
+   "fieldname": "ticket_number",
+   "fieldtype": "Data",
+   "label": "Ticket number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Data",
+   "label": "Barcode",
+   "read_only": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "solumn_xing",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Data",
+   "label": "Payment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "Invoice number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "participation",
+   "fieldtype": "Data",
+   "label": "Participation",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_checked",
+   "fieldtype": "Check",
+   "label": "Is Checked"
+  },
+  {
+   "fieldname": "section_ticket",
+   "fieldtype": "Section Break",
+   "label": "Ticket"
+  },
+  {
+   "fieldname": "free_text",
+   "fieldtype": "Small Text",
+   "label": "Free text"
+  },
+  {
+   "fieldname": "column_ticket",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sponsor",
+   "fieldtype": "Link",
+   "label": "Sponsor",
+   "options": "Organisation"
+  },
+  {
+   "fieldname": "email_clerk",
+   "fieldtype": "Data",
+   "label": "Email Clerk"
+  },
+  {
+   "fieldname": "meldedatum",
+   "fieldtype": "Date",
+   "label": "Meldedatum"
+  },
+  {
+   "default": "0",
+   "fieldname": "erster_tag_offen",
+   "fieldtype": "Check",
+   "label": "IF erster Tag offen"
+  },
+  {
+   "default": "0",
+   "fieldname": "zweiter_tag_offen",
+   "fieldtype": "Check",
+   "label": "IF zweiter Tag offen"
+  }
+ ],
+ "modified": "2022-07-13 08:31:34.879498",
+ "modified_by": "Administrator",
+ "module": "Lifefair",
+ "name": "Registration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lifefair Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lifefair User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "person",
+ "track_changes": 1
+}
